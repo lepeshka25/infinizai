@@ -21,6 +21,7 @@
 
   .burger_container {
     overflow: scroll;
+    transition: .3s;
     width: 100%;
     height: 100vh;
     position: absolute;
