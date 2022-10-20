@@ -1,16 +1,11 @@
 import React from 'react';
-import background from '../../assets/frame1_background.svg'
+// import background from '../../assets/frame1_background.svg'
 import cs from './main.module.scss'
 
 const Main = () => {
 	return (
 		<div
 			className={cs.main}
-			// style={{
-			// 	width: "100%",
-			// 		height: "100vh",
-			// 		background: `url(${background}) center / cover no-repeat`,
-			// }}
 		>
 			<div style={{width: '100%' , height: '50vh' , background: '#57B8FF'}}></div>
 			<div style={{width: '100%' , height: '50vh' , background: 'black'}}></div>
@@ -20,3 +15,9 @@ const Main = () => {
 };
 
 export default Main;
+
+// style={{
+// 	width: "100%",
+// 		height: "100vh",
+// 		background: `url(${background}) center / cover no-repeat`,
+// }}
