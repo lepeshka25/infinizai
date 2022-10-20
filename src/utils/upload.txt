@@ -1,0 +1,24 @@
+function uploadFiles (file) {
+    if (!file) return;
+    setUploaded(true)
+    const storageRef = ref(storage, `files/${file.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file);
+
+    uploadTask.on(
+      "state_changed",
+      () => {
+        // const prog = Math.round(
+        //   (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        // );
+      },
+      (error) => console.log(error),
+      () => {
+        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+          setSavePhotoURl(downloadURL)
+          setUploaded(false)
+          setUpdateData(item => !item)
+          // setStatePhoto(null)
+        });
+      }
+    );
+  }
