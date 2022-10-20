@@ -7,7 +7,7 @@ import Header from "./components/Header";
 const App = () => {
 
 	return (
-		<React.Fragment>
+		<div style={{height: '120vh' , overflowX: 'hidden'}}>
       <Header/>
 			<Routes>
 				<Route path={'/'} element={<Layout.Main/>}/>
@@ -15,7 +15,7 @@ const App = () => {
 				<Route path={'*'} element={<div>страницы не существует или в разработке :3</div>}/>
 			</Routes>
 			<Footer/>
-		</React.Fragment>
+		</div>
 	);
 };
 
