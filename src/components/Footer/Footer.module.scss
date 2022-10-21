@@ -1,3 +1,119 @@
 .footer {
+  width: 100%;
+  min-height: 20vh;
+  background: #222730;
+  color: white;
+
+  .container_footer {
+    border-bottom: 1px solid #3E3E3E;
+    //padding-bottom: 30px;
+    padding: 20px;
+
+    @media (min-width: 1024px) {
+      padding: 20px 60px;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 20px 100px;
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .container_info_company {
+      margin-bottom: 30px;
+      p {
+        margin-top: 20px;
+        font-family: 'Orbitron' , sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        width: 290px;
+        color: #999999;
+      }
+    }
+
+    .container {
+      margin-bottom: 20px;
+      h2 {
+        font-family: 'Orbitron' , sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .list {
+        .list_li {
+          text-transform: capitalize;
+          font-family: 'Orbitron' , sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #999999;
+          margin-bottom: 10px;
+          transition: .3s;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .container_social_icons {
+      h2 {
+        font-family: 'Orbitron' , sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .container_icons {
+        display: flex;
+        .icon {
+          padding: 5px;
+          background: gray;
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          transition: .3s;
+          &:hover {
+            animation: ease .3s animation_icons infinite;
+          }
+          @keyframes animation_icons {
+            0% {
+              transform: scale(0.8);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .container_footer_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    p {
+      font-family: 'Orbitron' , sans-serif;
+      color: #898989;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
 
 }

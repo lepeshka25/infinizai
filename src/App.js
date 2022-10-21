@@ -1,5 +1,6 @@
 import React from 'react';
-import * as Layout from './App/index'
+import * as Layout from './App/Layout/index'
+// import * as Auth from './App/Auth/index'
 import {Route, Routes} from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
