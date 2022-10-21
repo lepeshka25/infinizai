@@ -83,7 +83,7 @@
           border-radius: 5px;
           transition: .3s;
           &:hover {
-            animation: ease .3s animation_icons infinite;
+            animation: ease .3s animation_icons 1;
           }
           @keyframes animation_icons {
             0% {

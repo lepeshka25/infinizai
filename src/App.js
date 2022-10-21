@@ -4,8 +4,10 @@ import * as Layout from './App/Layout/index'
 import {Route, Routes} from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import {useGetDataBase} from "./hooks/useGetDataBase";
 
 const App = () => {
+	const data = useGetDataBase()
 
 	return (
 		<div style={{overflowX: 'hidden'}}>
