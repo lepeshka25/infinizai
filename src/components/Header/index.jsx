@@ -1,9 +1,12 @@
 import React from 'react';
+import cs from './headers.module.scss'
 import Headers from './component/Header'
 import SideBar from "./component/SideBar";
+import {useMediaQuery} from "react-responsive";
 
 const Header = () => {
 	const [burger , setBurger] = React.useState(false)
+	const isMobile = useMediaQuery({maxWidth: 767})
 
 	React.useEffect(() => {
 		document.body.overflow = burger ? 'hidden' : '';
@@ -11,10 +14,10 @@ const Header = () => {
 	}, [burger])
 
 	return (
-		<React.Fragment>
+		<div className={cs.headers}>
 			<Headers setBurger={setBurger} burger={burger}/>
-			<SideBar burger={burger} setBurger={setBurger}/>
-		</React.Fragment>
+			{isMobile && <SideBar burger={burger} setBurger={setBurger}/>}
+		</div>
 	);
 };
 

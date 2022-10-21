@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  p {
+    font-family: 'Orbitron' , sans-serif;
+    color: #57B8FF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}

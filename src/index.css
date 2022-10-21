@@ -7,7 +7,12 @@
   position: relative;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body , html {
+  scroll-behavior: smooth;
   /*overflow-x: hidden;*/
 }
 

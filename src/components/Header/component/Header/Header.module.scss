@@ -5,10 +5,85 @@
   width: 100%;
   padding: 5px 5%;
   background: #57B8FF;
+  z-index: 10;
+  
+  @media (min-width: 768px) {
+    padding: 20px 20px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: 1024px){
+    padding: 20px 20px;
+  }
+  
+  @media (min-width: 1440px) {
+    padding: 20px 60px;
+  }
 
   .icons {
     width: 30px;
     height: 30px;
     color: white;
+  }
+
+  .list {
+    display: flex;
+    .list_li {
+      margin: 0 10px;
+      font-family: 'Orbitron', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: white;
+      text-transform: capitalize;
+      @media (min-width: 1024px) {
+        font-size: 18px;
+        margin: 0 20px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 18px;
+        margin: 0 25px;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    .basket {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      @media (min-width: 1024px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    button {
+      border: 1px solid #FFFFFF;
+      background: transparent;
+      padding: 5px 10px;
+      color: white;
+      font-family: 'Orbitron' , sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      @media (min-width: 1024px) {
+        padding: 14px 31px;
+        font-size: 18px;
+      }
+
+      @media (min-width: 1440px) {
+        padding: 16px 31px;
+        font-size: 18px;
+      }
+    }
   }
 }

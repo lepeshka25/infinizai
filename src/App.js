@@ -7,7 +7,7 @@ import Header from "./components/Header";
 const App = () => {
 
 	return (
-		<div style={{height: '120vh' , overflowX: 'hidden'}}>
+		<div style={{overflowX: 'hidden'}}>
       <Header/>
 			<Routes>
 				<Route path={'/'} element={<Layout.Main/>}/>

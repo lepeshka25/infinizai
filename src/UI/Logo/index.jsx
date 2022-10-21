@@ -3,9 +3,9 @@ import logo from "../../assets/logo.svg";
 
 import cs from './logo.module.scss'
 
-const Logo = () => {
+const Logo = ({width , height}) => {
 	return (
-		<div className={cs.logo}>
+		<div style={{width: `${width}px` , height: `${height}px`}} className={cs.logo}>
 			<img src={logo} alt=""/>
 		</div>
 	);

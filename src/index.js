@@ -5,6 +5,7 @@ import App from './App';
 import {DataBaseProvider} from "./Provider/DatabaseProvider";
 import {BrowserRouter} from "react-router-dom";
 
+import "animate.css/animate.min.css";
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

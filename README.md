@@ -4,6 +4,13 @@ fonts ---- https://fonts.google.com/specimen/Orbitron?query=Orbitron
 
 firebase - storage , database 
 
+react-animation-on-scroll 
+
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+<AnimationOnScroll animateIn="animate__bounceIn">
+<h2>Some Text</h2>
+</AnimationOnScroll>
+
 
 
 ----------------------------------------------------------------------------------------
