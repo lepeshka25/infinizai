@@ -5,13 +5,17 @@
   height: 100vh;
   overflow: scroll;
   transition: .3s;
-  background: #57B8FF;
+  background: rgba(87, 184, 255, 0.2);
+  backdrop-filter: blur(8px);
   z-index: 11;
 
   .sideBar_container {
     width: 100%;
     min-height: 100vh;
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 16px 20px;
+    @media (min-width: 425px) {
+      padding: 0 20px 25px 20px;
+    }
     .sideBar_container_header {
       display: flex;
       align-items: center;
