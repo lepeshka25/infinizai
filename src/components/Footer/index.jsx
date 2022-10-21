@@ -1,13 +1,11 @@
 import React from 'react';
 import Logo from "../../UI/Logo";
 import {list} from "../../utils/List";
-import {useNavigate} from "react-router-dom";
 import FooterList from "../../UI/FooterList";
 import cs from './Footer.module.scss'
 import {AiFillLinkedin, AiOutlineFacebook, AiOutlineInstagram} from "react-icons/ai";
 
 const Footer = () => {
-	const navigate = useNavigate()
 	return (
 		<div className={cs.footer}>
 			<div className={cs.container_footer}>
