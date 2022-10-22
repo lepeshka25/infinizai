@@ -3,6 +3,7 @@ import {AnimationOnScroll} from "react-animation-on-scroll";
 import FutureoFeSports from "../../../../../UI/FUTURE OF eSPORTS/FUTUREOFeSPORTS";
 import banner_text from "../../../../../assets/frame1_text.svg";
 import frame1_banner from "../../../../../assets/frame1_banner.svg";
+import Button from "../../../../../UI/Button";
 import cs from "./frame_one.module.scss";
 
 const FrameOne = () => {
@@ -32,7 +33,7 @@ const FrameOne = () => {
 						<p className={cs.text_lorem}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec donec in morbi pulvinar. Enim non pulvinar neque.</p>
 
 						<div className={cs.container_btn}>
-							<button>Explore More</button>
+							<Button value={'Explore More'}/>
 							<button>View our team</button>
 						</div>
 					</div>
