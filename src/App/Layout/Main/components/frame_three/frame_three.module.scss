@@ -1,0 +1,82 @@
+.frameThree {
+  padding: 130px 60px;
+  width: 100%;
+  
+  @media (min-width: 320px) {
+    padding: 90px 10px;
+  }
+
+  .frameThree_container {
+
+    .container_text {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @media (min-width: 320px) {
+          width: 100%;
+        }
+
+        h1 {
+          font-family: 'Orbitron' , sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          color: white;
+
+          @media (min-width: 320px) {
+            font-size: 32px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+          }
+
+          @media (min-width: 768px) {
+            font-size: 64px;
+            margin-top: 20px;
+            margin-bottom: 35px;
+          }
+
+        }
+
+        .text {
+          font-family: 'Orbitron' , sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          color: rgba(223, 223, 223, 0.8);
+          width: 700px;
+          letter-spacing: 2px;
+          margin-bottom: 30px;
+
+          @media (min-width: 320px) {
+            font-size: 16px;
+            width: 100%;
+          }
+
+          @media (min-width: 768px) {
+            font-size: 16px;
+            width: 700px;
+          }
+
+        }
+
+      }
+    }
+
+    .cards_container {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+  }
+
+}

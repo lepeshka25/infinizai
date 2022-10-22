@@ -6,9 +6,12 @@ export const DataBaseProvider = ({children}) => {
 	const [data , setData] = React.useState(null)
 
 	React.useEffect(() => {
-		fetch('https://testalmaz-b24d1-default-rtdb.firebaseio.com/imageData/.json')
+		fetch('https://testalmaz-b24d1-default-rtdb.firebaseio.com/.json')
 			.then(res => res.json())
-			.then(res => Object.values(res).filter(item => item !== 'key'))
+			.then(res => {
+				let data = Object.values(res?.imageData).filter(item => item !== 'key')
+				return {...res , imageData: data}
+			})
 			.then(data => setData(data))
 	}, [])
 

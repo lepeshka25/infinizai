@@ -5,7 +5,6 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import cs from './frame_two.module.scss';
 
 const FrameTwo = () => {
-	// animate__swing
 	const data = useGetDataBase()
 
 	return (
@@ -17,7 +16,7 @@ const FrameTwo = () => {
 
 				<div className={cs.container_cards}>
 					{
-						data?.map(item => (
+						data?.imageData?.map(item => (
 							<AnimationOnScroll key={item} className={cs.cards} animateIn="animate__swing">
 								<img src={item} alt=""/>
 							</AnimationOnScroll>

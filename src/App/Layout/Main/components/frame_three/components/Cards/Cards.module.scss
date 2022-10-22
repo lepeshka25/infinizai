@@ -1,0 +1,56 @@
+.cards {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 32px;
+  
+  @media (min-width: 320px) {
+    width: 310px;
+    min-height: 100px;
+    padding: 35px 35px 35px 50px;
+  }
+
+  @media (min-width: 768px) {
+    width: 590px;
+    height: 220px;
+    padding: 35px 35px 35px 80px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 400px;
+    min-height: 300px;
+    padding: 35px 35px 35px 80px;
+  }
+  
+  @media (min-width: 1215px) {
+    width: 590px;
+    min-height: 100px;
+  }
+
+  img {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    @media (min-width: 768px) {
+      left: 35px;
+    }
+  }
+
+  h1 {
+    font-family: 'Orbitron' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 19px;
+  }
+
+  p {
+    font-family: 'Orbitron' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(223, 223, 223, 0.8);
+  }
+
+}
