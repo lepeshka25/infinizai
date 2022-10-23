@@ -5,6 +5,7 @@ import banner_text from "../../../../../assets/frame1_text.svg";
 import frame1_banner from "../../../../../assets/frame1_banner.svg";
 import Button from "../../../../../UI/Button";
 import cs from "./frame_one.module.scss";
+import Animation from "../../../../../UI/Animations";
 
 const FrameOne = () => {
 	return (
@@ -16,7 +17,7 @@ const FrameOne = () => {
 
 			<div className={cs.container}>
 
-				<AnimationOnScroll className={cs.animation_container} animateIn="animate__fadeInLeft">
+				<Animation className={cs.animation_container} animation={'animate__fadeInLeft'}>
 
 					<div className={cs.left_container}>
 
@@ -30,7 +31,9 @@ const FrameOne = () => {
 
 						<img className={cs.banner_text} src={banner_text} alt=""/>
 
-						<p className={cs.text_lorem}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec donec in morbi pulvinar. Enim non pulvinar neque.</p>
+						<p className={cs.text_lorem}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec donec in morbi pulvinar. Enim non pulvinar neque.
+						</p>
 
 						<div className={cs.container_btn}>
 							<Button value={'Explore More'}/>
@@ -38,12 +41,12 @@ const FrameOne = () => {
 						</div>
 					</div>
 
-				</AnimationOnScroll>
+				</Animation>
 
 				<div className={cs.right_container}>
-					<AnimationOnScroll className={cs.animation_container2} animateIn="animate__fadeInRight">
+					<Animation className={cs.animation_container2} animation={"animate__fadeInRight"}>
 						<img src={frame1_banner} alt=""/>
-					</AnimationOnScroll>
+					</Animation>
 				</div>
 
 			</div>
