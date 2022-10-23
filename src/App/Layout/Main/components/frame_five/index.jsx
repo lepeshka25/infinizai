@@ -18,17 +18,28 @@ const FrameFive = () => {
 		dots: false,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 3,
-		slidesToScroll: 2,
 	};
+
+	(function (){
+		if(window.innerWidth < 374){
+			settings = {...settings , slidesToShow: 2, slidesToScroll: 1,}
+		}
+		if(window.innerWidth >= 375 & window.innerWidth <= 425){
+			settings = {...settings , slidesToShow: 2, slidesToScroll: 1,}
+		}
+		if(window.innerWidth >= 425 & window.innerWidth <= 600){
+			settings = {...settings , slidesToShow: 2, slidesToScroll: 1,}
+		}
+		if(window.innerWidth >= 600){
+			settings = {...settings , slidesToShow: 3, slidesToScroll: 1,}
+		}
+	})()
 
 	return (
 		<div className={cs.frameFive}>
 			<div className={cs.frameFive_container}>
 				<div className={cs.left_container}>
-					<Animation animation={'пока'}>
-						<img src={frameFive} alt=""/>
-					</Animation>
+					<img src={frameFive} alt=""/>
 				</div>
 
 				<div className={cs.right_container}>
