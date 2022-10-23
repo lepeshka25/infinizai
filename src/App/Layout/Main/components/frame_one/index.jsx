@@ -1,5 +1,4 @@
 import React from 'react';
-import {AnimationOnScroll} from "react-animation-on-scroll";
 import FutureoFeSports from "../../../../../UI/FUTURE OF eSPORTS/FUTUREOFeSPORTS";
 import banner_text from "../../../../../assets/frame1_text.svg";
 import frame1_banner from "../../../../../assets/frame1_banner.svg";
