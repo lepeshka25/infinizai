@@ -7,6 +7,7 @@ import cs from "./frame_one.module.scss";
 import Animation from "../../../../../UI/Animations";
 
 const FrameOne = () => {
+
 	return (
 		<div className={cs.frame_one}>
 			<div className={cs.container_background}>
