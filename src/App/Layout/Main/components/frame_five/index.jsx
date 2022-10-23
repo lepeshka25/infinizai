@@ -10,6 +10,7 @@ const FrameFive = () => {
 	const [dataBase, setDataBase] = React.useState(null)
 	const data = useGetDataBase()
 
+
 	React.useEffect(() => {
 		setDataBase(data && Object.values(data?.frameFiveImage).filter(item => item !== 'key'))
 	}, [data])
