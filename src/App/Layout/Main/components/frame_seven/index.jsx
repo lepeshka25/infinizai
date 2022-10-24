@@ -1,10 +1,9 @@
 import React from 'react';
 import {useGetDataBase} from "../../../../../hooks/useGetDataBase";
 import Cards from "./components/Cards";
-import {useMediaQuery} from "react-responsive";
-import cs from './frame_seven.module.scss'
 import FutureoFeSports from "../../../../../UI/FUTURE OF eSPORTS/FUTUREOFeSPORTS";
 import Button from "../../../../../UI/Button";
+import cs from './frame_seven.module.scss'
 
 const FrameSeven = () => {
 	const data = useGetDataBase()
