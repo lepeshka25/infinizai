@@ -1,0 +1,187 @@
+.frame_seven {
+  width: 100% !important;
+  background: black;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  
+  @media (min-width: 768px) {
+    padding: 60px 60px;
+  }
+
+
+  .frame_seven_header {
+    width: 100%;
+    padding: 20px 0;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .title {
+      color: white;
+      font-family: 'Orbitron' , sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      margin: 10px 0;
+      
+      @media (max-width: 767px) {
+        font-size: 10vw;
+      }
+      
+      @media (min-width: 768px) {
+        font-size: 4vw;
+      }
+      
+    }
+
+    .container_btn {
+      @media (min-width: 768px) {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+    }
+
+  }
+
+  .frame_seven_body {
+
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: 768px) {
+      width: 100% !important;
+      height: 100% !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    div {
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      @media (min-width: 768px) {
+        width: 49%;
+        height: 100% !important;
+      }
+    }
+
+    .left_container {
+      height: 100%;
+      .cards {
+        width: 100% !important;
+        height: 100% !important;
+
+        img {
+          width: 100% !important;
+          height: 100% !important;
+          margin-bottom: 15px;
+          @media (min-width: 768px) {
+            margin-bottom: 10px;
+          }
+        }
+
+        .container {
+          width: 100% !important;
+          height: 100% !important;
+          display: flex !important;
+          flex-direction: column;
+          .title {
+            width: 100%;
+            white-space: nowrap;
+            color: #57B8FF;
+            font-family: 'Orbitron' , sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 4vw;
+              margin-bottom: 5px;
+            }
+            @media (min-width: 768px) {
+              font-size: 1.5vw;
+              margin-bottom: 5px;
+            }
+          }
+          .text {
+            width: 100% !important;
+            color: white;
+            font-family: 'Orbitron' , sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 6vw;
+              margin-bottom: 15px;
+            }
+            @media (min-width: 768px) {
+              font-size: 2vw;
+            }
+          }
+        }
+      }
+
+    }
+
+    .right_container {
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .cards {
+        width: 49% !important;
+        height: 100% !important;
+        margin-bottom: 20px;
+
+        img {
+          width: 100% !important;
+          height: 100% !important;
+          margin-bottom: 15px;
+          @media (min-width: 768px) {
+            margin-bottom: 3px;
+          }
+        }
+
+        .container {
+          width: 100% !important;
+          height: 100% !important;
+          display: flex !important;
+          flex-direction: column;
+          .title {
+            width: 100%;
+            white-space: nowrap;
+            color: #57B8FF;
+            font-family: 'Orbitron' , sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 3vw;
+              margin-bottom: 10px;
+            }
+            @media (min-width: 768px) {
+              font-size: 1.2vw;
+              margin-bottom: 10px;
+            }
+          }
+          .text {
+            width: 100% !important;
+            color: white;
+            font-family: 'Orbitron' , sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 3.5vw;
+            }
+            @media (min-width: 768px) {
+              font-size: 1.5vw;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+}
