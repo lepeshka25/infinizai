@@ -8,7 +8,6 @@ import Button from "../../../../../UI/Button";
 
 const FrameSeven = () => {
 	const data = useGetDataBase()
-	const isMobile = useMediaQuery({query: '(max-width: 767px)'})
 
 	return (
 		<div className={cs.frame_seven}>
