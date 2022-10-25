@@ -21,6 +21,6 @@ export const DataBaseProvider = ({children}) => {
 			data,
 			setUpdate
 		}
-	}, [data , update])
+	}, [data , setUpdate])
 	return <getDataBase.Provider value={value}>{children}</getDataBase.Provider>
 };
