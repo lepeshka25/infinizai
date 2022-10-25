@@ -1,0 +1,20 @@
+.team {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  padding: 130px 60px;
+  
+  @media (max-width: 768px) {
+    padding: 130px 20px;
+  }
+  
+  .team_container {
+    h1 {
+      color: white;
+      font-family: 'Orbitron' , sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+  }
+}

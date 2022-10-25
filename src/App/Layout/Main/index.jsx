@@ -6,6 +6,7 @@ import FrameFour from "./components/frame_four";
 import FrameFive from "./components/frame_five";
 import FrameSix from "./components/frame_six";
 import FrameSeven from "./components/frame_seven";
+import FrameEighth from "./components/frame_eighth";
 import cs from './main.module.scss';
 
 const Main = () => {
@@ -18,6 +19,7 @@ const Main = () => {
 			<FrameFive/>
 			<FrameSix/>
 			<FrameSeven/>
+			<FrameEighth/>
 		</div>
 	);
 };

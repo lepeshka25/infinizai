@@ -1,0 +1,22 @@
+.card {
+  width: 100%;
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid #57B8FF;
+  margin-bottom: 20px;
+  p {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Orbitron' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    @media (max-width: 768px) {
+      font-size: 5vw;
+    }
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}

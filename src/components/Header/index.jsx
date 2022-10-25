@@ -6,7 +6,7 @@ import {useMediaQuery} from "react-responsive";
 
 const Header = () => {
 	const [burger , setBurger] = React.useState(false)
-	const isMobile = useMediaQuery({maxWidth: 767})
+	const isMobile = useMediaQuery({maxWidth: 768})
 
 	React.useEffect(() => {
 		document.body.overflow = burger ? 'hidden' : '';
