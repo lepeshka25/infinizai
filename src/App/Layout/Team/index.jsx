@@ -5,7 +5,7 @@ import cs from './team.module.scss';
 import Animation from "../../../UI/Animations";
 
 const Team = () => {
-	const {data , setUpdate} = useGetDataBase()
+	const {data} = useGetDataBase()
 	const [dataBase , setDataBase] = React.useState(null)
 
 	React.useEffect(() => {

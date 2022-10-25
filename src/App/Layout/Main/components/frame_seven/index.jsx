@@ -7,7 +7,7 @@ import cs from './frame_seven.module.scss'
 import Animation from "../../../../../UI/Animations";
 
 const FrameSeven = () => {
-	const {data , setUpdate} = useGetDataBase()
+	const {data} = useGetDataBase()
 
 	return (
 		<div className={cs.frame_seven}>
