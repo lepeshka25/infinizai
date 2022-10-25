@@ -7,7 +7,7 @@ import background from '../../../../../assets/frame3_background.svg'
 import cs from './frame_three.module.scss';
 
 const FrameThree = () => {
-	const data = useGetDataBase()
+	const {data , setUpdate} = useGetDataBase()
 
 	return (
 		<div style={{background: `url(${background}) center / cover no-repeat`}} className={cs.frameThree}>

@@ -4,6 +4,7 @@ export const getDataBase = React.createContext({})
 
 export const DataBaseProvider = ({children}) => {
 	const [data , setData] = React.useState(null)
+	const [update , setUpdate] = React.useState(false)
 
 	React.useEffect(() => {
 		fetch('https://testalmaz-b24d1-default-rtdb.firebaseio.com/.json')
@@ -13,10 +14,13 @@ export const DataBaseProvider = ({children}) => {
 				return {...res , imageData: data}
 			})
 			.then(data => setData(data))
-	}, [])
+	}, [update])
 
 	const value = React.useMemo(() => {
-		return data
-	}, [data])
+		return {
+			data,
+			setUpdate
+		}
+	}, [data , update])
 	return <getDataBase.Provider value={value}>{children}</getDataBase.Provider>
 };

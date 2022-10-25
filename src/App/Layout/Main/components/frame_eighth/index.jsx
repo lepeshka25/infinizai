@@ -2,15 +2,18 @@ import React from 'react';
 import background from '../../../../../assets/frame8_background.svg'
 import image_text from '../../../../../assets/frame8_text.svg'
 import cs from './frame_eighth.module.scss'
+import {useGetDataBase} from "../../../../../hooks/useGetDataBase";
 
 const FrameEighth = () => {
 	const [input , setInput] = React.useState(null)
+	const {setUpdate} = useGetDataBase()
 
 	function onSubmit (value){
 		fetch('https://testalmaz-b24d1-default-rtdb.firebaseio.com/gmailData/.json', {
 			method: 'POST',
 			body: JSON.stringify(value)
 		})
+		setUpdate(state => !state)
 	}
 
 	return (

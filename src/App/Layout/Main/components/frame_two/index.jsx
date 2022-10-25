@@ -5,7 +5,7 @@ import Animation from "../../../../../UI/Animations";
 import cs from './frame_two.module.scss';
 
 const FrameTwo = () => {
-	const data = useGetDataBase()
+	const {data , setUpdate} = useGetDataBase()
 
 	return (
 		<div className={cs.frame_two}>

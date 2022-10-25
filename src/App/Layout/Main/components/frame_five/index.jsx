@@ -8,7 +8,7 @@ import cs from './frame_five.module.scss'
 
 const FrameFive = () => {
 	const [dataBase, setDataBase] = React.useState(null)
-	const data = useGetDataBase()
+	const {data , setUpdate} = useGetDataBase()
 
 
 	React.useEffect(() => {
