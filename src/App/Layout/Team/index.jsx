@@ -2,6 +2,7 @@ import React from 'react';
 import {useGetDataBase} from "../../../hooks/useGetDataBase";
 import Cards from './components/Cards';
 import cs from './team.module.scss';
+import Animation from "../../../UI/Animations";
 
 const Team = () => {
 	const data = useGetDataBase()
@@ -21,9 +22,14 @@ const Team = () => {
 
 				{
 					dataBase?.map((item , index) => (
-						<Cards item={item} key={index}/>
+						<Animation
+							animation={index % 2 === 0 ? 'animate__bounceInLeft' : 'animate__bounceInRight'} key={index}
+						>
+							<Cards item={item}/>
+						</Animation>
 					))
 				}
+
 			</div>
 		</div>
 	);

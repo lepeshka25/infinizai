@@ -4,6 +4,7 @@ import Cards from "./components/Cards";
 import FutureoFeSports from "../../../../../UI/FUTURE OF eSPORTS/FUTUREOFeSPORTS";
 import Button from "../../../../../UI/Button";
 import cs from './frame_seven.module.scss'
+import Animation from "../../../../../UI/Animations";
 
 const FrameSeven = () => {
 	const data = useGetDataBase()
@@ -22,28 +23,29 @@ const FrameSeven = () => {
 			</div>
 
 			<div className={cs.frame_seven_body}>
-				<div className={cs.left_container}>
+
+				<Animation className={cs.animation_left} animation={'animate__backInLeft'}>
 					<Cards
 						cs={cs}
 						text={'Esports Group teams up with the Indianapolis Colts'}
 						title={'April 2, 2021'}
 						image={data?.frame_seven?.big_image?.item}
 					/>
-				</div>
+				</Animation>
 
-				<div className={cs.right_container}>
-					{
-						data && Object.values(data?.frame_seven?.small_image)?.map((item, index) => (
-							<Cards
-								cs={cs}
-								key={index}
-								text={item?.text}
-								title={item?.title}
-								image={item?.url}
-							/>
-						))
-					}
-				</div>
+				<Animation className={cs.animation_right} animation={'animate__backInRight'}>
+						{
+							data && Object.values(data?.frame_seven?.small_image)?.map((item, index) => (
+								<Cards
+									cs={cs}
+									key={index}
+									text={item?.text}
+									title={item?.title}
+									image={item?.url}
+								/>
+							))
+						}
+				</Animation>
 
 			</div>
 		</div>
