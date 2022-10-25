@@ -7,9 +7,6 @@ import Header from "./components/Header";
 import {useGetDataBase} from "./hooks/useGetDataBase";
 
 const App = () => {
-	const {data} = useGetDataBase()
-	console.log(data)
-
 	return (
 		<div style={{overflowX: 'hidden'}}>
       <Header/>
